@@ -28,9 +28,9 @@ There are three main measures of central tendency: the mean, the median and the 
 $$ 
 \Large\bar X = \dfrac{\sum X}{N} $$
 
-> Yes, we're using the dreaded "mathematical notation". It's OK. It's just a concise way to write things down. It's along (along with long, confusion model names like "Recurrent Neural Networks") one of the ways that data scientists make so much money. The math and long words scare people away from ideas that are actually pretty straightforward!
+> Yes, we're using the dreaded "mathematical notation". It's OK. It's just a concise way to write things down. It's one of the reasons (along with long, confusing model names like "Recurrent Neural Networks") that data scientists make so much money. The math and long words scare people away from ideas that are actually pretty straightforward!
 
-So if you're a math whiz, great. If not, take a little time to look at an unpack the formulae we show in this course. Over time it'll become second nature and that's going to be really important as a practicing data scientist.
+So if you're a math whiz, great. If not, take a little time to look at and unpack the formulas we show in this course. Over time it'll become second nature and that's going to be really important as a practicing data scientist.
 
 Let's start with the $\bar{x}$ (x-bar) - the bar over the top just means "mean of the sample".   
 
@@ -50,7 +50,7 @@ The mean value is calculated as:
 623/11 = 56.6
 ```
 
-For most people, the "mean" is what they think of as the "average". If I got paid \$20k and you got paid \$40k last year our "average" salary was \$30,000.
+For most people, the "mean" is what they think of as the "average". If I got paid \$20k and you got paid \$40k last year our "average" salary was \$30k.
 
 ## Median
 
@@ -70,15 +70,15 @@ Median = (60 + 61)/2 = 60.5
 
 Why might we want to use the median instead of the mean? Well, imagine there are 10 people sitting in a bar. All of them make \$50k a year. A hedge fund manager comes in who makes \$20m a year. The "average" (mean) salary of people in the bar is now just over \$1.86m a year! It is true, but it might be misleading if you relied on that data to ask any of the first 10 people to loan you \$500k!
 
-So medians are particularly useful for data sets where there are a number of significant outliers (like the hedge fund managers salary) and you want to get a sense of a "representative" measure of centrality. If we looked at the median salary in the bar, it'd still be \$50k even with the hedge fund manager. It'd be a little misleading for that one person but would give you a better sense of the kind of salary that most people in the bar made.
+So medians are particularly useful for data sets where there are a number of significant outliers (like the hedge fund manager's salary) and you want to get a sense of a "representative" measure of centrality. If we looked at the median salary in the bar, it'd still be \$50k even with the hedge fund manager. It'd be a little misleading for that one person but would give you a better sense of the kind of salary that most people in the bar made.
 
 ## Mode
 
 The Mode refers to the data value that occurs most frequently in a given data set. Hence, it uses the frequency (repetition) of a certain value to be a representative of the central tendency of data. 
 
-For our retirement data above, we can see that the value 54 appears most frequently (i.e. 3 times). So the mode value for retirement age , based on our data , would be 54 years. Similarly, for the weight data, the value 56 appears more frequently than the rest and hence would be considered a mode for this data.  
+For our retirement data above, we can see that the value 54 appears most frequently (i.e. 3 times). So the mode value for retirement age, based on our data, would be 54 years. Similarly, for the weight data, the value 56 appears more frequently than the rest and hence would be considered a mode for this data.  
 
-If two (or more) values occur with the same frequency in a dataset, both (or all) of the items are considered the mode of the data and the data set is **multimodal**. (Multimodality and its impact data analysis will be discussed later in the course.)
+If two (or more) values occur with the same frequency in a dataset, both (or all) of the items are considered the mode of the data and the data set is **multimodal**. (Multimodality and its impact on data analysis will be discussed later in the course.)
 
 The mode is particularly useful for categorical data (data grouped into categories) and is often used for filling in missing data in a messy data set. However, it's important to look at a plot of the distribution of data before using the mode to represent centrality as sometimes the most popular category will not be centrally positioned.
 
@@ -107,7 +107,7 @@ Here we can see that the mean value i.e. 56.6 does not fully reflect the typical
 
 > In a histogram, you can always visually locate the bin where most of the values occur (as peaks). That's the concept that a measure of central tendency attempts to represent as a number.
 
-Try putting in the values for weight dataset and see what you think of the histogram. Also, try changing the bin size and see if it helps you better understand the distribution of underlying data.  
+Try putting in the values for the weight dataset and see what you think of the histogram. Also, try changing the bin size and see if it helps you better understand the distribution of underlying data.  
 
 ## Histogram Shape and Measures of Central Tendency
 
@@ -129,7 +129,7 @@ While performing analytical tasks, skewed distributions need special treatment a
 
 ### Outliers and measures of central tendency
 
-Outliers are extreme, or unusual data value(s) that are notably different from the rest of the data. It is important to detect outliers within a distribution, because they can alter the results of the data analysis. The mean is more sensitive to the existence of outliers than the median or mode. 
+Outliers are extreme, or unusual data values that are notably different from the rest of the data. It is important to detect outliers within a distribution, because they can alter the results of the data analysis. The mean is more sensitive to the existence of outliers than the median or mode. 
 
 Let's look again at our retirement dataset, but with one difference; the last observation of 60 years has been replaced with a retirement age of 81 years. 
 
@@ -144,12 +144,17 @@ As all values are included in the calculation of the mean, the outlier will infl
 ```
  54+54+54+55+56+57+57+58+58+60+81 = 644 divided by 11 = 58.5 years
 ```
-So we see that In this distribution the outlier value has increased the mean value. However, it has not changed the middle of the distribution, and therefore the median value is still 57 years. 
+So we see that in this distribution the outlier value has increased the mean value. However, it has not changed the middle of the distribution, and therefore the median value is still 57 years. 
 
 Despite the existence of outliers in a distribution, the mean can still be an appropriate measure of central tendency, especially if the rest of the data is normally distributed. If the outlier is confirmed as a valid extreme value, it should be treated accordingly. 
 
 ## Summary
 
-In this lesson, we looked at three measures that can be used to identify the central tendency of a given dataset. These measures will be used throughout our data analysis journey and with practice, we shall learn to see how we can choose one (or more) of these measures to represent different datasets with different characteristics.
+In this lesson, we looked at three measures that can be used to identify the central tendency of a given dataset. These measures will be used throughout our data analysis journey and, with practice, we shall learn to see how we can choose one (or more) of these measures to represent different datasets with different characteristics.
 
 
+
+
+```python
+
+```
