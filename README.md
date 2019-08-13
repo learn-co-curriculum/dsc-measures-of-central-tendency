@@ -10,20 +10,20 @@ In this lesson, we will look at such measures first for a single data variable. 
 
 ## Objectives
 You will be able to:
-* Understand and describe the significance of measuring central tendency of continuous data
+* Understand and describe the significance of measuring central tendency of data
 * Understand the formula and intuition behind the mean, median, mode, and modal class
-* Compare mean-median-mode, along with histograms to explain the central tendency of given data
+* Compare mean, median, and mode, along with histograms to explain the central tendency of data
 
 ## Background
 
 The term *Central Tendency* or a *Measure of Central Tendency* is the **typical** or **central** value for a data distribution. It is also commonly known as just the *Center* of the distribution. If you weren't becoming a data scientist, you might just call it the "average", but it turns out that there are different types of "averages" that work better for answering different sorts of problems.
 
-There are three main measures of central tendency: the mean, the median and the mode. Each of these measures describes a different way of indicating the typical or central value in the data as we will see below. 
+There are three main measures of central tendency: the mean, the median, and the mode. Each of these measures describes a different way of indicating the typical or central value in the data as we will see below. 
 
 
 ## Mean
 
-**Mean** or **Arithmetic Average** is the value obtained by dividing the sum of all the data by the total number of data points as shown in the formula below:
+The **Mean** or **Arithmetic Average** is the value obtained by dividing the sum of all the data by the total number of data points as shown in the formula below:
 
 $$ 
 \Large\bar X = \dfrac{\sum X}{N} $$
@@ -34,7 +34,7 @@ So if you're a math whiz, great. If not, take a little time to look at and unpac
 
 Let's start with the $\bar{x}$ (x-bar) - the bar over the top just means "mean of the sample".   
 
-The mean value, shown as $\bar{x}$ (x-bar) for a vector $X$ is achieved by adding together all values of $X$ (shown as $\sum{X}$),  and dividing $N$ (Number of observations).
+The mean value, shown as $\bar{x}$ (x-bar) for a vector $X$ is achieved by adding together all values of $X$ (shown as $\sum{X}$),  and dividing $N$ (number of observations).
 e.g. Let’s look at a very simple set of data representing the retirement age of 11 individuals
 ```
 54, 54, 54, 55, 56, 57, 57, 58, 58, 60, 60
@@ -51,6 +51,14 @@ The mean value is calculated as:
 ```
 
 For most people, the "mean" is what they think of as the "average". If I got paid \$20k and you got paid \$40k last year our "average" salary was \$30k.
+
+### Sample Mean vs. Population Mean
+
+Think back to the retirement age example above. The data set only included information about 11 individuals. There are certainly more than 11 people who retired out there but, for whatever reason, their data are not available. In mathematical terms, you would say the 11 individuals are a **sample** of the entire **population** of people who retired.  
+
+As a data scientist, you will often run into situations where you do not have access to data on the entire population of people you might be interested in. Instead you will only have access to a smaller sample from the entire population. It will be your job to estimate features of the population based on the sample. As you might imagine, as the sample size increases (in other words: a larger fraction of the population is sampled), it approximates the population more accurately. 
+
+The difference between sample and population does not impact the way you calculate mean - you still divide the sum of all values by the total number of values - but it is important to distinguish between a sample mean and population mean. This is why there are different mathematical symbols to represent them. The sample mean is represented by the $\bar{x}$ described above. The population mean is represented by the Greek letter, $\mu$ (mu, pronounced "mew"). The distinction between sample and population metrics will pop up every now and then throughout the course so keep this in the back of your head.   
 
 ## Median
 
@@ -111,13 +119,13 @@ Try putting in the values for the weight dataset and see what you think of the h
 
 ## Histogram Shape and Measures of Central Tendency
 
-### Symmetrical distributions
+### Symmetrical Distributions
 
 For symmetric distributions, the mode, median and mean are all in the middle of the distribution. The following histogram shows a larger retirement age dataset with a distribution which is symmetrical. All central measures in this case are equal to 58 years.
 
 <img src="images/image_sym.png" width="450">
 
-### Skewed distributions
+### Skewed Distributions
 
 A non-symmetrical distribution is called a "skewed distribution". For skewed distribution, the mode and median remain unchanged, but the mean generally moves in the direction of the tails. For such distributions, the median is often a preferred measure of central tendency, as the mean does not clearly reflect the central tendency. Based on the direction of mean's movement, such distributions can be further categorized as positively or negatively skewed distributions as shown below:
 
@@ -125,9 +133,9 @@ A non-symmetrical distribution is called a "skewed distribution". For skewed dis
 
 <img src="images/image_neg.png" width="450">
 
-While performing analytical tasks, skewed distributions need special treatment at times. We shall look deeper into this later during the course. 
+While performing analytical tasks, skewed distributions need special treatment at times. We will look deeper into this later during the course. 
 
-### Outliers and measures of central tendency
+### Outliers and Measures of Central Tendency
 
 Outliers are extreme, or unusual data values that are notably different from the rest of the data. It is important to detect outliers within a distribution, because they can alter the results of the data analysis. The mean is more sensitive to the existence of outliers than the median or mode. 
 
@@ -150,11 +158,4 @@ Despite the existence of outliers in a distribution, the mean can still be an ap
 
 ## Summary
 
-In this lesson, we looked at three measures that can be used to identify the central tendency of a given dataset. These measures will be used throughout our data analysis journey and, with practice, we shall learn to see how we can choose one (or more) of these measures to represent different datasets with different characteristics.
-
-
-
-
-```python
-
-```
+In this lesson, we looked at three measures that can be used to identify the central tendency of a given dataset. These measures will be used throughout our data analysis journey and, with practice, we will learn to see how we can choose one (or more) of these measures to represent different datasets with different characteristics.
