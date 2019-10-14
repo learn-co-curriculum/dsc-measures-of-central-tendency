@@ -10,9 +10,7 @@ In this lesson, we will look at such measures first for a single data variable. 
 
 ## Objectives
 You will be able to:
-* Understand and describe the significance of measuring central tendency of data
-* Understand the formula and intuition behind the mean, median, mode, and modal class
-* Compare mean, median, and mode, along with histograms to explain the central tendency of data
+* Compare the different measures of central tendency
 
 ## Background
 
@@ -158,4 +156,4 @@ Despite the existence of outliers in a distribution, the mean can still be an ap
 
 ## Summary
 
-In this lesson, we looked at three measures that can be used to identify the central tendency of a given dataset. These measures will be used throughout our data analysis journey and, with practice, we will learn to see how we can choose one (or more) of these measures to represent different datasets with different characteristics.
+In this lesson, we looked at three measures that can be used to identify the central tendency of a given dataset, the mean, the mode, and the median. These measures will be used throughout our data analysis journey and, with practice, we will learn to see how we can choose one (or more) of these measures to represent different datasets with different characteristics.
