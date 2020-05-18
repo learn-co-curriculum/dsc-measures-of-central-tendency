@@ -48,7 +48,7 @@ The mean value is calculated as:
 623/11 = 56.6
 ```
 
-For most people, the "mean" is what they think of as the "average". If I got paid \$20k and you got paid \$40k last year our "average" salary was \$30k.
+For most people, the "mean" is what they think of as the "average". If I got paid \\$20k and you got paid \\$40k last year our "average" salary was \\$30k.
 
 ### Sample Mean vs. Population Mean
 
@@ -74,9 +74,9 @@ So here, for the even number of observations (i.e. 10), the median would be calc
 Median = (60 + 61)/2 = 60.5
 ```
 
-Why might we want to use the median instead of the mean? Well, imagine there are 10 people sitting in a bar. All of them make \$50k a year. A hedge fund manager comes in who makes \$20m a year. The "average" (mean) salary of people in the bar is now just over \$1.86m a year! It is true, but it might be misleading if you relied on that data to ask any of the first 10 people to loan you \$500k!
+Why might we want to use the median instead of the mean? Well, imagine there are 10 people sitting in a bar. All of them make \\$50k a year. A hedge fund manager comes in who makes \\$20m a year. The "average" (mean) salary of people in the bar is now just over \\$1.86m a year! It is true, but it might be misleading if you relied on that data to ask any of the first 10 people to loan you \\$500k!
 
-So median is particularly useful for datasets where there are a number of significant outliers (like the hedge fund manager's salary) and you want to get a sense of a "representative" measure of centrality. If we looked at the median salary in the bar, it'd still be \$50k even with the hedge fund manager. It'd be a little misleading for that one person but would give you a better sense of the kind of salary that most people in the bar made.
+So median is particularly useful for datasets where there are a number of significant outliers (like the hedge fund manager's salary) and you want to get a sense of a "representative" measure of centrality. If we looked at the median salary in the bar, it'd still be \\$50k even with the hedge fund manager. It'd be a little misleading for that one person but would give you a better sense of the kind of salary that most people in the bar made.
 
 ## Mode
 
