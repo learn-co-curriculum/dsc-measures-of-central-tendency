@@ -1,4 +1,3 @@
-
 # Measures of Central Tendency
 
 ## Introduction
@@ -90,9 +89,9 @@ The mode is particularly useful for categorical data (data grouped into categori
 
 ## Histograms and Central Tendency
 
-We have already seen how to draw histograms for a given set of values. Histograms can also be used as an additional aid to help decide between different measures of central tendency. 
+Histograms are a type of plot used to show the distribution of a single variable. The x-axis shows bins of values present in the dataset, and the y-axis shows a count of the number of cases falling into each bin.
 
-> A histogram is a type of graph in which the x-axis lists categories or values for a dataset, and the y-axis shows a count of the number of cases falling into each category.
+They can be used as an additional aid to help decide between different measures of central tendency.
 
 For the sample data above, let's draw a histogram for retirement ages.
 
@@ -100,9 +99,9 @@ For the sample data above, let's draw a histogram for retirement ages.
 ```python
 import matplotlib.pyplot as plt
 x = [54, 54, 54, 55, 56, 57, 57, 58, 58, 60, 60]
-plt.hist(x, bins=5)
-plt.title("Retirement Ages")
-plt.show()
+bins = 5
+plt.hist(x, bins=bins, edgecolor="black", color="#00C8AD")
+plt.title("Retirement Ages");
 ```
 
 
@@ -113,7 +112,18 @@ Here we can see that the mean value, i.e. 56.6 does not fully reflect the typica
 
 > In a histogram, you can always visually locate the bin where most of the values occur (as peaks). That's the concept that a measure of central tendency attempts to represent as a number.
 
-Try putting in the values for the weight dataset and see what you think of the histogram. Also, try changing the bin size and see if it helps you better understand the distribution of underlying data.  
+Try putting in the values for the weight dataset and see what you think of the histogram. Also, try changing the bin size and see if it helps you better understand the distribution of underlying data. 
+
+
+```python
+# Use this cell to explore the weight dataset from previous lessons,
+# or a set of values of your choice
+x = []
+bins = 5
+
+plt.hist(x, bins=bins, edgecolor="black", color="#00C8AD")
+plt.title("Weights");
+```
 
 ## Histogram Shape and Measures of Central Tendency
 
