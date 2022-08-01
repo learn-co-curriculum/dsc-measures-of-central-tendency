@@ -8,7 +8,9 @@ In this lesson, we will look at such measures first for a single data variable. 
 
 
 ## Objectives
+
 You will be able to:
+
 * Compare the different measures of central tendency
 
 ## Background
@@ -105,7 +107,9 @@ plt.title("Retirement Ages");
 ```
 
 
+    
 ![png](index_files/index_1_0.png)
+    
 
 
 Here we can see that the mean value, i.e. 56.6 does not fully reflect the typical behavior of this particular data if we wanted to use this as a representative figure for retirement age. The median i.e. 57 also fails to represent the general tendency found in this dataset. The mode, i.e. 54 shows the most commonly occuring value which could be used as a representative value. Such decisions, however, are subjective and may differ based on the analytical question asked. For this example, the average or median may still be used to reflect the overall range of values present in the dataset. 
