@@ -135,15 +135,15 @@ plt.title("Weights");
 
 For symmetric distributions, the mode, median, and mean are all in the middle of the distribution. The following histogram shows a larger retirement age dataset with a distribution which is symmetrical. All central measures in this case are equal to 58 years.
 
-<img src="images/image_sym.png" width="450">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/image_sym.png" width="450">
 
 ### Skewed Distributions
 
 A non-symmetrical distribution is called a "skewed distribution". For skewed distribution, the mode and median remain unchanged, but the mean generally moves in the direction of the tails. For such distributions, the median is often a preferred measure of central tendency, as the mean does not clearly reflect the central tendency. Based on the direction of mean's movement, such distributions can be further categorized as positively or negatively skewed distributions as shown below:
 
-<img src="images/image_pos.png" width="450">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/image_pos.png" width="450">
 
-<img src="images/image_neg.png" width="450">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/image_neg.png" width="450">
 
 While performing analytical tasks, skewed distributions need special treatment at times. We will look deeper into this later during the course. 
 
